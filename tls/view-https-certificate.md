@@ -1,9 +1,13 @@
-# View HTTPS Certificate
+# View HTTPS certificate from the terminal
 
 Sometime it is useful inpect the certificate used by a website or API endpoint:
 
 ```shell
 $ openssl s_client -connect arduino.cc:443 < /dev/null | openssl x509 -noout -text
+```
+
+and here's the result:
+```
 depth=3 O = Digital Signature Trust Co., CN = DST Root CA X3
 verify return:1
 depth=2 C = US, O = Internet Security Research Group, CN = ISRG Root X1
