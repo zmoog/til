@@ -14,7 +14,22 @@ Create a ZIP file with the whole library folder:
 $ zip -r ArduinoIoTCloud-with-debug.zip ArduinoIoTCloud
 ```
 
-You’ll end up with a 4.9M file.
+You’ll end up with a 4.9M file named `ArduinoIoTCloud-with-debug.zip` with the following content:
+
+```shell
+# Prints the content of the ZIP file to double check its content structure.
+$ unzip -l ArduinoIoTCloud-with-debug.zip | tail
+16655  08-11-2020 20:51   ArduinoIoTCloud/extras/test/src/test_callback.cpp
+ 3472  08-11-2020 20:51   ArduinoIoTCloud/extras/test/src/test_CloudLocation.cpp
+ 2277  08-11-2020 20:51   ArduinoIoTCloud/extras/test/src/test_publishOnChangeRateLimit.cpp
+  907  08-11-2020 20:51   ArduinoIoTCloud/extras/test/src/test_writeOnly.cpp
+ 1095  08-11-2020 20:51   ArduinoIoTCloud/extras/test/src/test_readOnly.cpp
+ 1996  08-11-2020 20:51   ArduinoIoTCloud/extras/test/src/test_publishEvery.cpp
+ 1560  08-11-2020 20:51   ArduinoIoTCloud/extras/test/src/test_publishOnChange.cpp
+26082  10-22-2021 16:53   ArduinoIoTCloud/extras/test/src/test_encode.cpp
+---------                     -------
+7447543                     1352 files
+```
 
 Visit https://create.arduino.cc/editor and click on Libraries > Custom.
 
