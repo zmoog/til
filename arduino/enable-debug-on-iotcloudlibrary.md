@@ -24,9 +24,11 @@ Great! Starting from now, every time you build a sketch that requires the IoTClo
 
 TIP: remove this custom library after the tests, or you won't get new updates to the original library.
 
-Run a new “verify and upload” using an Over-the-Air device, and now you will see additional information in the Serial Monitor, like the following output:
+Run a new “verify and upload” using an Over-the-Air device, and now you will see additional information in the Serial Monitor, like the following output (this is a successful OTA update):
 
 ```
+## Comment: board 1st boot
+
 ***** Arduino IoT Cloud - configuration info *****
 Device ID: ba38d0c7-9bcc-412f-8073-cd6e28afa41a
 Thing ID: 08f67265-01be-48a1-aa50-a1d1bf9462a4
@@ -44,10 +46,20 @@ ArduinoIoTCloudTCP::handle_SubscribeMqttTopics subscribed to /a/t/08f67265-01be-
 Connected to Arduino IoT Cloud
 ArduinoIoTCloudTCP::handle_RequestLastValues [12890] last values requested
 ArduinoIoTCloudTCP::handleMessage [15899] last values received
+
+## Comment: 1st boot completed, now the sketch is running.
+
+... time passes ...
+
+## Comment: I click on “verify and upload” and the OTA process starts
+
 ArduinoIoTCloudTCP::onOTARequest _ota_url = https://api-dev.arduino.cc/iot/ota/732ccdfb-89dd-43e2-9206-a9bbb947b984
 ArduinoIoTCloudTCP::samd_onOTARequest downloading to nina: https://api-dev.arduino.cc/iot/ota/732ccdfb-89dd-43e2-9206-a
 ArduinoIoTCloudTCP::samd_onOTARequest download successful
 ArduinoIoTCloudTCP::samd_onOTARequest performing reset to reboot
+
+## Comment: the board resets
+
 ***** Arduino IoT Cloud - configuration info *****
 Device ID: ba38d0c7-9bcc-412f-8073-cd6e28afa41a
 Thing ID: 08f67265-01be-48a1-aa50-a1d1bf9462a4
@@ -65,6 +77,8 @@ ArduinoIoTCloudTCP::handle_SubscribeMqttTopics subscribed to /a/t/08f67265-01be-
 Connected to Arduino IoT Cloud
 ArduinoIoTCloudTCP::handle_RequestLastValues [14629] last values requested
 ArduinoIoTCloudTCP::handleMessage [17639] last values received
+
+## Comment: the process completed successfully.
 ```
 
 ## How to access the serial port from the terminal
