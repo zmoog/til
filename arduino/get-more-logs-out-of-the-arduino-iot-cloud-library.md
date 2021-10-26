@@ -37,54 +37,58 @@ Run a new “verify and upload” using an Over-the-Air device, and now you will
 ```
 ## Comment: board 1st boot
 
-***** Arduino IoT Cloud - configuration info *****
-Device ID: ba38d0c7-9bcc-412f-8073-cd6e28afa41a
-Thing ID: 08f67265-01be-48a1-aa50-a1d1bf9462a4
-MQTT Broker: mqtts-sa.iot.oniudra.cc:8883
-WiFi.status(): 0
-Current WiFi Firmware: 1.4.8
-Connected to "Middle Earth"
-ArduinoIoTCloudTCP::handle_SyncTime internal clock configured to posix timestamp 1635149042
-ArduinoIoTCloudTCP::handle_ConnectMqttBroker connecting to mqtts-sa.iot.oniudra.cc:8883 (attempt 0)
-ArduinoIoTCloudTCP::handle_ConnectMqttBroker connected to mqtts-sa.iot.oniudra.cc:8883
-ArduinoIoTCloudTCP::handle_SubscribeMqttTopics subscribing to /a/t/08f67265-01be-48a1-aa50-a1d1bf9462a4/e/i ...
-ArduinoIoTCloudTCP::handle_SubscribeMqttTopics subscribed to /a/t/08f67265-01be-48a1-aa50-a1d1bf9462a4/e/i
-ArduinoIoTCloudTCP::handle_SubscribeMqttTopics subscribing to /a/t/08f67265-01be-48a1-aa50-a1d1bf9462a4/shadow/i ...
-ArduinoIoTCloudTCP::handle_SubscribeMqttTopics subscribed to /a/t/08f67265-01be-48a1-aa50-a1d1bf9462a4/shadow/i
-Connected to Arduino IoT Cloud
-ArduinoIoTCloudTCP::handle_RequestLastValues [12890] last values requested
-ArduinoIoTCloudTCP::handleMessage [15899] last values received
+[2021-10-26 11:48:22] ***** Arduino IoT Cloud - configuration info *****
+[2021-10-26 11:48:22] Device ID: 46854c56-8237-49a6-93d7-217be67b1951
+[2021-10-26 11:48:22] Thing ID: 298a6dc2-4018-46cd-9255-6b6c6a5007a0
+[2021-10-26 11:48:22] MQTT Broker: mqtts-sa.iot.arduino.cc:8883
+[2021-10-26 11:48:22] WiFi.status(): 0
+[2021-10-26 11:48:22] Current WiFi Firmware: 1.4.8
+[2021-10-26 11:48:26] Connected to "Middle Earth"
+[2021-10-26 11:48:26] ArduinoIoTCloudTCP::handle_SyncTime internal clock configured to posix timestamp 1635241707
+[2021-10-26 11:48:27] ArduinoIoTCloudTCP::handle_ConnectMqttBroker connecting to mqtts-sa.iot.arduino.cc:8883 (attempt 0)
+[2021-10-26 11:48:30] ArduinoIoTCloudTCP::handle_ConnectMqttBroker connected to mqtts-sa.iot.arduino.cc:8883
+[2021-10-26 11:48:34] Sd card not detected
+[2021-10-26 11:48:34] ArduinoIoTCloudTCP::handle_SubscribeMqttTopics subscribing to /a/t/298a6dc2-4018-46cd-9255-6b6c6a5007a0/e/i ...
+[2021-10-26 11:48:35] ArduinoIoTCloudTCP::handle_SubscribeMqttTopics subscribed to /a/t/298a6dc2-4018-46cd-9255-6b6c6a5007a0/e/i
+[2021-10-26 11:48:35] ArduinoIoTCloudTCP::handle_SubscribeMqttTopics subscribing to /a/t/298a6dc2-4018-46cd-9255-6b6c6a5007a0/shadow/i ...
+[2021-10-26 11:48:35] ArduinoIoTCloudTCP::handle_SubscribeMqttTopics subscribed to /a/t/298a6dc2-4018-46cd-9255-6b6c6a5007a0/shadow/i
+[2021-10-26 11:48:35] Connected to Arduino IoT Cloud
+[2021-10-26 11:48:35] ArduinoIoTCloudTCP::handle_RequestLastValues [15670] last values requested
+[2021-10-26 11:48:37] ArduinoIoTCloudTCP::handleMessage [17497] last values received
 
 ## Comment: 1st boot completed, now the sketch is running.
 
+
 ... time passes ...
+
 
 ## Comment: I click on “verify and upload” and the OTA process starts
 
-ArduinoIoTCloudTCP::onOTARequest _ota_url = https://api-dev.arduino.cc/iot/ota/732ccdfb-89dd-43e2-9206-a9bbb947b984
-ArduinoIoTCloudTCP::samd_onOTARequest downloading to nina: https://api-dev.arduino.cc/iot/ota/732ccdfb-89dd-43e2-9206-a
-ArduinoIoTCloudTCP::samd_onOTARequest download successful
-ArduinoIoTCloudTCP::samd_onOTARequest performing reset to reboot
+[2021-10-26 11:50:30] ArduinoIoTCloudTCP::onOTARequest _ota_url = https://api2.arduino.cc/iot/ota/38d59aee-e004-4dd7-8b79-716c4e7678dc
+[2021-10-26 11:50:30] ArduinoIoTCloudTCP::samd_onOTARequest downloading to nina: https://api2.arduino.cc/iot/ota/38d59aee-e004-4dd7-8b79-716c
+[2021-10-26 11:50:44] ArduinoIoTCloudTCP::samd_onOTARequest download successful
+[2021-10-26 11:50:44] ArduinoIoTCloudTCP::samd_onOTARequest performing reset to reboot
 
 ## Comment: the board resets
 
-***** Arduino IoT Cloud - configuration info *****
-Device ID: ba38d0c7-9bcc-412f-8073-cd6e28afa41a
-Thing ID: 08f67265-01be-48a1-aa50-a1d1bf9462a4
-MQTT Broker: mqtts-sa.iot.oniudra.cc:8883
-WiFi.status(): 0
-Current WiFi Firmware: 1.4.8
-Connected to "Middle Earth"
-ArduinoIoTCloudTCP::handle_SyncTime internal clock configured to posix timestamp 1635154511
-ArduinoIoTCloudTCP::handle_ConnectMqttBroker connecting to mqtts-sa.iot.oniudra.cc:8883 (attempt 0)
-ArduinoIoTCloudTCP::handle_ConnectMqttBroker connected to mqtts-sa.iot.oniudra.cc:8883
-ArduinoIoTCloudTCP::handle_SubscribeMqttTopics subscribing to /a/t/08f67265-01be-48a1-aa50-a1d1bf9462a4/e/i ...
-ArduinoIoTCloudTCP::handle_SubscribeMqttTopics subscribed to /a/t/08f67265-01be-48a1-aa50-a1d1bf9462a4/e/i
-ArduinoIoTCloudTCP::handle_SubscribeMqttTopics subscribing to /a/t/08f67265-01be-48a1-aa50-a1d1bf9462a4/shadow/i ...
-ArduinoIoTCloudTCP::handle_SubscribeMqttTopics subscribed to /a/t/08f67265-01be-48a1-aa50-a1d1bf9462a4/shadow/i
-Connected to Arduino IoT Cloud
-ArduinoIoTCloudTCP::handle_RequestLastValues [14629] last values requested
-ArduinoIoTCloudTCP::handleMessage [17639] last values received
+[2021-10-26 11:51:04] ***** Arduino IoT Cloud - configuration info *****
+[2021-10-26 11:51:04] Device ID: 46854c56-8237-49a6-93d7-217be67b1951
+[2021-10-26 11:51:04] Thing ID: 298a6dc2-4018-46cd-9255-6b6c6a5007a0
+[2021-10-26 11:51:04] MQTT Broker: mqtts-sa.iot.arduino.cc:8883
+[2021-10-26 11:51:04] WiFi.status(): 0
+[2021-10-26 11:51:04] Current WiFi Firmware: 1.4.8
+[2021-10-26 11:51:08] Connected to "Middle Earth"
+[2021-10-26 11:51:08] ArduinoIoTCloudTCP::handle_SyncTime internal clock configured to posix timestamp 1635241868
+[2021-10-26 11:51:09] ArduinoIoTCloudTCP::handle_ConnectMqttBroker connecting to mqtts-sa.iot.arduino.cc:8883 (attempt 0)
+[2021-10-26 11:51:12] ArduinoIoTCloudTCP::handle_ConnectMqttBroker connected to mqtts-sa.iot.arduino.cc:8883
+[2021-10-26 11:51:16] Sd card not detected
+[2021-10-26 11:51:16] ArduinoIoTCloudTCP::handle_SubscribeMqttTopics subscribing to /a/t/298a6dc2-4018-46cd-9255-6b6c6a5007a0/e/i ...
+[2021-10-26 11:51:16] ArduinoIoTCloudTCP::handle_SubscribeMqttTopics subscribed to /a/t/298a6dc2-4018-46cd-9255-6b6c6a5007a0/e/i
+[2021-10-26 11:51:16] ArduinoIoTCloudTCP::handle_SubscribeMqttTopics subscribing to /a/t/298a6dc2-4018-46cd-9255-6b6c6a5007a0/shadow/i ...
+[2021-10-26 11:51:17] ArduinoIoTCloudTCP::handle_SubscribeMqttTopics subscribed to /a/t/298a6dc2-4018-46cd-9255-6b6c6a5007a0/shadow/i
+[2021-10-26 11:51:17] Connected to Arduino IoT Cloud
+[2021-10-26 11:51:17] ArduinoIoTCloudTCP::handle_RequestLastValues [15249] last values requested
+[2021-10-26 11:51:18] ArduinoIoTCloudTCP::handleMessage [16648] last values received
 
 ## Comment: the process completed successfully.
 ```
@@ -111,22 +115,22 @@ $ minicom -D /dev/cu.usbmodem1101
 TIP: Pressing `Meta-N` on the `minicom` console you also get a nice timestamp on each line:
 
 ```
-***** Arduino IoT Cloud - configuration info *****
-Device ID: ba38d0c7-9bcc-412f-8073-cd6e28afa41a
-[2021-10-26 10:50:59] Thing ID: 08f67265-01be-48a1-aa50-a1d1bf9462a4
-[2021-10-26 10:50:59] MQTT Broker: mqtts-sa.iot.oniudra.cc:8883
-[2021-10-26 10:50:59] WiFi.status(): 0
-[2021-10-26 10:50:59] Current WiFi Firmware: 1.4.8
-[2021-10-26 10:51:03] Connected to "Middle Earth"
-[2021-10-26 10:51:04] ArduinoIoTCloudTCP::handle_SyncTime internal clock configured to posix timestamp 1635238264
-[2021-10-26 10:51:05] ArduinoIoTCloudTCP::handle_ConnectMqttBroker connecting to mqtts-sa.iot.oniudra.cc:8883 (attempt 0)
-[2021-10-26 10:51:08] ArduinoIoTCloudTCP::handle_ConnectMqttBroker connected to mqtts-sa.iot.oniudra.cc:8883
-[2021-10-26 10:51:09] ArduinoIoTCloudTCP::handle_SubscribeMqttTopics subscribing to /a/t/08f67265-01be-48a1-aa50-a1d1bf9462a4/e/i ...
-[2021-10-26 10:51:09] ArduinoIoTCloudTCP::handle_SubscribeMqttTopics subscribed to /a/t/08f67265-01be-48a1-aa50-a1d1bf9462a4/e/i
-[2021-10-26 10:51:09] ArduinoIoTCloudTCP::handle_SubscribeMqttTopics subscribing to /a/t/08f67265-01be-48a1-aa50-a1d1bf9462a4/shadow/i ...
-[2021-10-26 10:51:09] ArduinoIoTCloudTCP::handle_SubscribeMqttTopics subscribed to /a/t/08f67265-01be-48a1-aa50-a1d1bf9462a4/shadow/i
-[2021-10-26 10:51:09] Connected to Arduino IoT Cloud
-[2021-10-26 10:51:10] ArduinoIoTCloudTCP::handle_RequestLastValues [14079] last values requested
-[2021-10-26 10:51:14] ArduinoIoTCloudTCP::handleMessage [18089] last values received
+[2021-10-26 11:48:22] ***** Arduino IoT Cloud - configuration info *****
+[2021-10-26 11:48:22] Device ID: 46854c56-8237-49a6-93d7-217be67b1951
+[2021-10-26 11:48:22] Thing ID: 298a6dc2-4018-46cd-9255-6b6c6a5007a0
+[2021-10-26 11:48:22] MQTT Broker: mqtts-sa.iot.arduino.cc:8883
+[2021-10-26 11:48:22] WiFi.status(): 0
+[2021-10-26 11:48:22] Current WiFi Firmware: 1.4.8
+[2021-10-26 11:48:26] Connected to "Middle Earth"
+[2021-10-26 11:48:26] ArduinoIoTCloudTCP::handle_SyncTime internal clock configured to posix timestamp 1635241707
+[2021-10-26 11:48:27] ArduinoIoTCloudTCP::handle_ConnectMqttBroker connecting to mqtts-sa.iot.arduino.cc:8883 (attempt 0)
+[2021-10-26 11:48:30] ArduinoIoTCloudTCP::handle_ConnectMqttBroker connected to mqtts-sa.iot.arduino.cc:8883
+[2021-10-26 11:48:34] ArduinoIoTCloudTCP::handle_SubscribeMqttTopics subscribing to /a/t/298a6dc2-4018-46cd-9255-6b6c6a5007a0/e/i ...
+[2021-10-26 11:48:35] ArduinoIoTCloudTCP::handle_SubscribeMqttTopics subscribed to /a/t/298a6dc2-4018-46cd-9255-6b6c6a5007a0/e/i
+[2021-10-26 11:48:35] ArduinoIoTCloudTCP::handle_SubscribeMqttTopics subscribing to /a/t/298a6dc2-4018-46cd-9255-6b6c6a5007a0/shadow/i ...
+[2021-10-26 11:48:35] ArduinoIoTCloudTCP::handle_SubscribeMqttTopics subscribed to /a/t/298a6dc2-4018-46cd-9255-6b6c6a5007a0/shadow/i
+[2021-10-26 11:48:35] Connected to Arduino IoT Cloud
+[2021-10-26 11:48:35] ArduinoIoTCloudTCP::handle_RequestLastValues [15670] last values requested
+[2021-10-26 11:48:37] ArduinoIoTCloudTCP::handleMessage [17497] last values received
 
 ```
