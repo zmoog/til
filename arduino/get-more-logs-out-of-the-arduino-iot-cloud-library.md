@@ -32,6 +32,8 @@ Great! Starting from now, every time you build a sketch that requires the IoTClo
 
 TIP: remove this custom library after the test, or you won't get new updates to the original library.
 
+## Upload and Run the Sketch on the Board
+
 Run a new “verify and upload” using an Over-the-Air device, and now you will see additional information in the Serial Monitor, like the following output (this is a successful OTA update):
 
 ```
