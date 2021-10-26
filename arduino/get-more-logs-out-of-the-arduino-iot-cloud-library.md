@@ -121,5 +121,3 @@ Device ID: ba38d0c7-9bcc-412f-8073-cd6e28afa41a
 [2021-10-26 10:51:14] ArduinoIoTCloudTCP::handleMessage [18089] last values received
 
 ```
-
-- [Is there an OS X terminal program that can access serial ports?](https://apple.stackexchange.com/questions/32834/is-there-an-os-x-terminal-program-that-can-access-serial-ports)
