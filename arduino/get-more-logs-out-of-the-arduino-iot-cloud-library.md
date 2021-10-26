@@ -13,6 +13,15 @@ Visit https://github.com/zmoog/ArduinoIoTCloud and:
 
 Save the ZIP file on your computer to use it as a custom library on the Cloud Editor.
 
+## Set up your Sketch
+
+Make sure your sketch is configured to use the most verbose log level:
+
+```c
+//Get Cloud Info/errors , 0 (only errors) up to 4
+setDebugMessageLevel(4);
+```
+
 ## Upload the IoTCloudLibrary as a Custom Library on the Arduino Cloud Editor
 
 Visit https://create.arduino.cc/editor and click on Libraries > Custom.
