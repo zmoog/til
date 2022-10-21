@@ -1,6 +1,6 @@
 # Get More Logs out of the Arduino IoTCloudLibrary
 
-As of today, the [ArduinoIoTCloud](https://github.com/arduino-libraries/ArduinoIoTCloud) library does not have any specific verbose logs, so trace complex workflows like Over-the-Air (OTA) update process can become quite challenging.
+As of today, the [ArduinoIoTCloud](https://github.com/arduino-libraries/ArduinoIoTCloud) library does not have any specific verbose logs, so tracing complex workflows like the Over-the-Air (OTA) update process can become quite challenging.
 
 I created a humble [fork](https://github.com/zmoog/ArduinoIoTCloud) of the library, with just a very few additional log statements.
 
@@ -26,7 +26,7 @@ setDebugMessageLevel(4);
 
 Visit https://create.arduino.cc/editor and click on Libraries > Custom.
 
-Click on the icon, and upload your custom version of the library.
+Click on the import icon (near the "Library Manager" button), and upload your custom version of the library.
 
 Great! Starting from now, every time you build a sketch that requires the IoTCloudLibrary this custom version will be used!
 
