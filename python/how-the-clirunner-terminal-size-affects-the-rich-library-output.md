@@ -1,6 +1,6 @@
 # How the CliRunner terminal size affects the Rich library output
 
-The [Click](https://click.palletsprojects.com/) library has a great support for testing CLI execution. For example, you can use the CliRunner to test your CLI with something like this:
+The [Click](https://click.palletsprojects.com/) library has excellent support for testing CLI execution. For example, you can use the CliRunner to test your CLI with something like this:
 
 ```python
 from click.testing import CliRunner
@@ -13,11 +13,11 @@ def test_hello_world():
   assert result.output == 'Hello Peter!\n'
 ```
 
-Everything goes as expected until you use the amazing [Rich library](https://github.com/Textualize/rich) to build some tabular output.
+Everything goes as expected until you use the fantastic [Rich library](https://github.com/Textualize/rich) to build some tabular output.
 
 The CliRunner uses a terminal size of `80`, and the Rich library wraps the column content accordingly.
 
-For example, here's the output from running the same command from my laptop's terminal (termimal size `180`):
+For example, here's the output from running the same command from my laptop's terminal (terminal size `180`):
 
 ```shell
 $ rfrb it iphones --name '12 Pro Max'
@@ -47,4 +47,4 @@ And from the CliRunner (terminal size `80`):
 
 ```
 
-So, when you are testing Rich output using the CliRunner keep in mind how ots terminal size will influence Rich's output.
+So, when testing Rich output using the CliRunner, keep in mind how the terminal size will influence Rich's output.
