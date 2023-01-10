@@ -1,17 +1,17 @@
 # Backup an Obsidian vault to a GitHub repo
 
-I leverage iCloud to sync my vaults between my Mac, iPhone, and iPad. Unfortunately, iCloud doesn't offer you the following:
+I leverage iCloud Drive to sync my Obsidian vaults between my Mac, iPhone, and iPad. Unfortunately, iCloud Drive doesn't offer you the following:
 
 - sync status
 - sync activity
 - file version history
 - file restore capabilities
 
-In the early time the servies was flacky, but in recent years has grown a lot, an now it sync pretty reliably. Still, the lack of the aforementioned feature make me feel anxious as the size of my vault increases over time.
+When Apple introduced iCloud Drive, the service was flaky for a while, but in recent years has grown a lot, and now it syncs pretty reliably. Still, the lack of the features mentioned above makes me anxious as my vault's size increases over time.
 
-So I decided to add an offsite backup solution to the mix.
+Will I recover a file deleted by mistake or resolve conflicting edits on different devices? I'm not 100% sure.
 
-Periodically commit and push vault file changes to a private GitHub repo.
+So I decided to add an offsite backup solution: periodically commit vault files changed on my laptop and push them to a private GitHub repo.
 
 
 ## Create a private GitHub repository
