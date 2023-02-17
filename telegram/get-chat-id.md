@@ -44,3 +44,47 @@ access-control-expose-headers: Content-Length,Content-Type,Date,Server,Connectio
   ]
 }
 ```
+
+More interactions with the Telegram API using curl:
+
+```shell
+
+# get information on self
+$ curl "https://api.telegram.org/TOKEN/getMe" | jq
+{
+  "ok": true,
+  "result": {
+    "id": 123,
+    "is_bot": true,
+    "first_name": "Hogwarts Bot",
+    "username": "hogwarts_api_bot",
+    "can_join_groups": true,
+    "can_read_all_group_messages": false,
+    "supports_inline_queries": false
+  }
+}
+
+# send a simple text message
+curl  https://api.telegram.org/TOKEN/sendMessage\?chat_id\=123\&text\=Hey
+{
+  "ok": true,
+  "result": {
+    "message_id": 662,
+    "from": {
+      "id": 123,
+      "is_bot": true,
+      "first_name": "Hogwarts Bot",
+      "username": "hogwarts_api_bot"
+    },
+    "chat": {
+      "id": 123,
+      "first_name": "Maurizio",
+      "last_name": "Branca",
+      "username": "zmoog",
+      "type": "private"
+    },
+    "date": 1675921224,
+    "text": "Hey"
+  }
+}
+```
