@@ -69,8 +69,11 @@ $ docker inspect amazon-ecs-local-container-endpoints | jq '.[].NetworkSettings.
 Nice, the IP address is `172.20.0.4`, let's test if task metadata endpoint is working as expected:
 
 ```shell
+# Enter in the container
 $ docker exec -it amazon-ecs-local-container-endpoints /bin/bash
-bash-4.2# curl -i http://172.20.0.4/v3
+
+# Send an HTTP request to the Task Metadata Endpoint API
+$ curl -i http://172.20.0.4/v3
 HTTP/1.1 200 OK
 Content-Type: application/json
 Date: Wed, 30 Mar 2022 13:27:22 GMT
